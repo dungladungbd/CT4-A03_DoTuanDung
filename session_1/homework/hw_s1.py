@@ -13,7 +13,7 @@ while loop:
     loop = False
     for i in range(1,n+1):
         f = f*i
-print("The factorial of your number is: ",f)
+print("The factorial of {} is: ".format(n),f)
 
 
 print()
@@ -26,6 +26,6 @@ while loop :
         print("Please input an integer !!! ")
         continue
     loop = False
-print("Your number's length is: ", numb.__len__())
+print("The length of {} is: ".format(numb), numb.__len__())
 
 
