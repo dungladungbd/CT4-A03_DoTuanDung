@@ -17,7 +17,7 @@ def select_list(lst):
     for value in avail_ans.values():
         index1 = -1
         index2 = -1
-        for i in range(lst.__len__()):
+        for i in range(len(lst)):
             if lst[i] == value[0] and index1 == -1:
                 index1 = i
             elif lst[i] == value[1] and index2 == -1:
