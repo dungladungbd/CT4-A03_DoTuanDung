@@ -65,3 +65,25 @@ def sub_str(strr):
 
 
 print(sub_str("abcab"))
+
+
+# Ex 4:
+def min_tiles(n, m):
+    n = int(n)
+    m = int(m)
+    # base case, when areas is 0.
+    if n == 0 or m == 0:
+        return 0
+
+    elif n % 2 == 0 and m % 2 == 0:
+        return min_tiles(n/2, m/2)
+    elif n % 2 == 0 and m % 2 == 1:
+        return (n + min_tiles(n/2, m/2))
+    elif n % 2 == 1 and m % 2 == 0:
+        return (m + min_tiles(n/2, m/2))
+    else:
+        return (n+m-1 + min_tiles(n/2, m/2))
+
+print(min_tiles(1,2))
+
+n *(m%2) + m*(n%2) - (m*n)%2
