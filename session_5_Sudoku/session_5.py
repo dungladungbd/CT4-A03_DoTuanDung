@@ -39,7 +39,6 @@ def solve(bo):
             if solve(bo):
                 return True
             bo[row][col] = 0
-
     return False
 
 

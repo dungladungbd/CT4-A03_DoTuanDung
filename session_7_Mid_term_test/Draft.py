@@ -1,3 +1,2 @@
-def a(b):
-    return True
-print(a(1))
+nums = set([1, 1, 2, 2, 3, 3, 3, 4])
+print(len(nums))

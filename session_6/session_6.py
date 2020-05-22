@@ -1,5 +1,5 @@
 
-n = 9
+n = 5
 
 
 def print_solution(board):
